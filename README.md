@@ -1,6 +1,8 @@
 #   di(dynamic injection)
 this lib can be used to dynamically inject a dependency from a dynamic lib.
 
+for detail, check out [this blog](https://titanxxh.com/2021/03/31/golang-dynamic-injection/) (Chinese)
+
 this lib combines 
 -   golang [plugin](https://golang.org/pkg/plugin/) mechanism 
 -   and a tricky [reflection](api.go) mechanism 

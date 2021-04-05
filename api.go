@@ -43,5 +43,8 @@ func Instantiate(typ string) (interface{}, reflect.Value, error) {
 		}
 	}
 	v, err := runtime.Instantiate(pkgPath, typeString, isPtr)
+	if err != nil {
+		return nil, reflect.Value{}, err
+	}
 	return v.Interface(), v, err
 }
